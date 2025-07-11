@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  background: linear-gradient(to bottom right, #1c1c1c, #343434);
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  width: 320px;
+  transition: 0.3s ease;
+}
+
+.display {
+  background: #000;
+  color: #0ff;
+  font-size: 2.5rem;
+  padding: 20px;
+  text-align: right;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: inset 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.btn {
+  font-size: 1.4rem;
+  padding: 20px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #2e2e2e, #1e1e1e);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(145deg, #3c3c3c, #2a2a2a);
+}
+
+.operator {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  color: #fff;
+}
+
+.operator:hover {
+  background: linear-gradient(135deg, #ff6a88, #ff3c2b);
+}
+
+.equal {
+  grid-column: span 4;
+  background: linear-gradient(135deg, #11998e, #38ef7d);
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.equal:hover {
+  background: linear-gradient(135deg, #38ef7d, #11998e);
+}
+
+.clear {
+  background: linear-gradient(135deg, #ff512f, #dd2476);
+  color: #fff;
+}
+
+.clear:hover {
+  background: linear-gradient(135deg, #f76c5e, #e94057);
+}
